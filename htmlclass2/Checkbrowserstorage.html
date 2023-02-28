@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CheckLocal(){
+            if(window.localStorage){
+                alert("Local storage supported");
+            }
+            else {
+                alert("Local stoarge not supported");
+            }
+        }
+        function CheckSession(){
+            if(window.sessionStorage){
+                alert("Session storage supported");
+            }
+            else {
+                alert("Session stoarge not supported");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Local" onclick="CheckLocal()"/>
+    <input type="button" value="Session" onclick="CheckSession()"/>
+    
+</body>
+</html>

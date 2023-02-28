@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addvalue(){
+            localStorage.menu="Vegetarian";
+            localStorage.item="Brown Rice";
+            localStorage.item1="Gulab Jamun";
+        }
+        function checkvalue(){
+            alert(localStorage.length);
+        }
+
+        function removevalue(){
+            localStorage.clear();
+        }
+    </script>
+</head>
+<body>
+    <lable>Local Storage</lable>
+    <input type="button" value="Add Value" onclick="addvalue()"/>
+    <input type="button" value=" Check Value" onclick="checkvalue()"/>
+    <input type="button" value="Remove Value" onclick="removevalue()"/>
+
+</body>
+</html>
